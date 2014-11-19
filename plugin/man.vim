@@ -9,7 +9,7 @@ endif
 let loaded_man = 1
 
 if !exists("no_plugin_maps") && !exists("no_man_maps")
-  nmap <Leader>K :call man#PreGetPage(0)<CR>
+  nnoremap <Leader>K :call man#PreGetPage(0)<CR>
 endif
 
 com -nargs=+ Man call man#GetPage(<f-args>)
