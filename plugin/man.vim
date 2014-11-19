@@ -1,7 +1,7 @@
 " Man page plugin
 " Language:	man
 " Maintainer:	SungHyun Nam <goweol@gmail.com>
-" Last Change:	2012 Jul 29
+" Last Change:	2013 Jul 17
 
 if exists('loaded_man') || &cp
     finish

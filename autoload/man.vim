@@ -1,7 +1,7 @@
 " man page plugin
 " Language:	man
 " Maintainer:	SungHyun Nam <goweol@gmail.com>
-" Last Change:	2012 Jul 29
+" Last Change:	2013 Jul 17
 
 " Define functions only once.
 if !exists("s:man_tag_depth")
@@ -110,7 +110,7 @@ func man#GetPage(...)
   " Avoid warning for editing the dummy file twice
   setl buftype=nofile noswapfile
 
-  setl ma
+  setl ma nonu nornu nofen
   silent exec "norm 1GdG"
   let $MANWIDTH = winwidth(0)
   silent exec "r!/usr/bin/man ".s:GetCmdArg(sect, page)." | col -b"
